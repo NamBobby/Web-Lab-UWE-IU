@@ -12,26 +12,27 @@
 <body>
 
 <div class="container mt-3">
-  <h3>Multiple Inputs and Addons</h3>
-  
+  <h3>Input Group with Checkboxes and Radios</h3>
+  <p>You can also use checkboxes or radio buttons instead of text:</p>
   <form>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text">Person</span>
+        <div class="input-group-text">
+          <input type="checkbox"> 
+        </div>
       </div>
-      <input type="text" class="form-control" placeholder="First Name">
-      <input type="text" class="form-control" placeholder="Last Name">
-    </div>  
+      <input type="text" class="form-control" placeholder="Some text">
+    </div>
   </form>
   
   <form>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text">One</span>
-        <span class="input-group-text">Two</span>
-        <span class="input-group-text">Three</span>
+        <div class="input-group-text">
+          <input type="radio"> 
+        </div>
       </div>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" placeholder="Some text">
     </div>
   </form>
 </div>
