@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Bootstrap Example</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
@@ -10,15 +11,17 @@
 </head>
 <body>
 
-<div class="container">
-  <h2>Custom Switch</h2>
-  <p>To create a custom "toggle switch", wrap a container element, like div, with a class of .custom-control and .custom-switch around a checkbox. Then add the .custom-control-input class to the checkbox:</p>
-                                        
+<div class="container mt-3">
+  <h2>Custom Radio Buttons</h2>
+  <p>To create a custom radio button, wrap a container element, like div, with a class of .custom-control and .custom-radio around the radio button. Then add the .custom-control-input to the radio button.</p>
+  <p><strong>Tip:</strong> If you use labels for accompanying text, add the .custom-control-label class to it. Note that the value of the for attribute should match the id of the radio:</p>
   <form action="/action_page.php">
-    <div class="custom-control custom-switch">
-      <input type="checkbox" class="custom-control-input" id="switch1" name="example">
-      <label class="custom-control-label" for="switch1">Toggle me</label>
-    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+      <label class="custom-control-label" for="customRadio">Custom radio</label>
+    </div>    
+    <input type="radio" id="defaultRadio" name="example2">
+    <label for="defaultRadio">Default radio</label>
     <br>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
