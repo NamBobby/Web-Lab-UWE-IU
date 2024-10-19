@@ -12,12 +12,20 @@
 <body>
 
 <div class="container">
-  <h2>Vertical Button Group</h2>
-  <p>Use the .btn-group-vertical class to create a vertical button group:</p>
-  <div class="btn-group-vertical">
+  <h2>Nesting Button Groups</h2>
+  <p>Nest button groups to create dropdown menus:</p>
+  <div class="btn-group">
     <button type="button" class="btn btn-primary">Apple</button>
     <button type="button" class="btn btn-primary">Samsung</button>
-    <button type="button" class="btn btn-primary">Sony</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Sony
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
   </div>
 </div>
 
