@@ -12,23 +12,26 @@
 <body>
 
 <div class="container">
-  <h2>Form control: radio buttons</h2>
-  <p>The form below contains three radio buttons. The first option is checked by default, and the last option is disabled:</p>
+  <h2>Form control: select</h2>
+  <p>The form below contains two dropdown menus (select lists):</p>
   <form action="/action_page.php">
-    <div class="form-check">
-      <label class="form-check-label" for="radio1">
-        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
-      </label>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label" for="radio2">
-        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
-      </label>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" disabled>Option 3
-      </label>
+    <div class="form-group">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1" name="sellist1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+      <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+      <select multiple class="form-control" id="sel2" name="sellist2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
