@@ -12,14 +12,14 @@
 <body>
 
 <div class="container">
-  <h2>Form Control Plain Text</h2>
-  <p>Use the .form-control-plaintext if you want to style the input field as plain text:</p>
+  <h2>Form Control Range and File</h2>
+  <p>Add the .form-control-range class to input type"range" or .form-control-file to input type"file" to style a range control or a file field with full-width:</p>
   <form action="/action_page.php">
     <div class="form-group">
-      <input type="text" class="form-control" placeholder="Default form control" name="text1">
+      <input type="range" class="form-control-range" name="range">
     </div>
     <div class="form-group">
-      <input type="text" class="form-control-plaintext" placeholder="Form control with plain text" name="text2">
+      <input type="file" class="form-control-file border" name="file">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
