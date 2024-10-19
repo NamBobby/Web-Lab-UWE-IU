@@ -12,15 +12,29 @@
 <body> 
 
 <div class="container mt-3">
-  <h2>Vertical Direction</h2>
-  <p>Use .flex-column to display the flex items vertically (on top of each other):</p>
-  <div class="d-flex flex-column mb-3">
+  <h2>Justify content</h2>
+  <p>Use the .justify-content-* classes to change the alignment of flex items. Choose from start (default), end, center, between or around:</p>
+  <div class="d-flex justify-content-start bg-secondary mb-3">
     <div class="p-2 bg-info">Flex item 1</div>
     <div class="p-2 bg-warning">Flex item 2</div>
     <div class="p-2 bg-primary">Flex item 3</div>
   </div>
-  <p>Use .flex-column-reverse to reverse the vertical direction:</p>
-  <div class="d-flex flex-column-reverse">
+  <div class="d-flex justify-content-end bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <div class="d-flex justify-content-center bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <div class="d-flex justify-content-between bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <div class="d-flex justify-content-around bg-secondary mb-3">
     <div class="p-2 bg-info">Flex item 1</div>
     <div class="p-2 bg-warning">Flex item 2</div>
     <div class="p-2 bg-primary">Flex item 3</div>
