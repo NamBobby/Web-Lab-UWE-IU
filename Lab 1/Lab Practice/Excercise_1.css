@@ -1,124 +1,152 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    background-color: #fff;
+html {
+  background-color: #fff;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8e7;
-    color: #4a4a4a;
-    line-height: 1.6;
-    border: 3px solid #b60000;
-    width: 600px;
-    margin: 0 auto;
-}
-
-main {
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  background-color: #fff8e7;
+  color: #4a4a4a;
+  line-height: 1.2;
+  border: 3px solid #b60000;
+  width: 650px;
+  margin: 0 auto;
 }
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #fddc6c, #ff9966);
-    padding: 1.5em 0 2em 0;
-    border-bottom: 3px solid #b60000;
+  background: linear-gradient(30deg, #f5bd7a, #ffffff);
+  padding: 1.5em 0 2em 0;
+  border-bottom: 3px solid #b60000;
 }
 
 header h2 {
-    padding: .5em 0 .25em 0;
-    color: #b60000;
+  font-size: 200%;
+  padding: 0.1em 0 0.01em 0;
+  color: #b60000;
+  text-indent: 30px;
+  font-weight: bold;
 }
 
 header h3 {
-    font-style: italic;
+  color: #000000;
+  font-size: 150%;
+  font-style: italic;
+  text-indent: 30px;
+  font-weight: bold;
 }
 
-.shadow {
-    text-shadow: 5px 5px 5px #b60000;
+.shadowtext {
+  background-color: transparent;
+  text-shadow: 1.5px 1.5px 1.5px #97373c;
 }
 
+header img {
+  margin-left: 10px;
+  float: left;
+  width: 110px;
+  height: 110px;
+}
+
+/* Main*/
+
+main {
+  clear: left;
+  padding: 20px;
+}
+
+main p {
+  color: #000000;
+}
 
 /* Mission Section */
 .mission h2 {
-    color: #b60000;
-    padding: .5em 0 .25em 0;
-    margin-bottom: 10px;
+  color: #b60000;
+  padding: 0.5em 0 0.25em 0;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .mission blockquote {
-    margin: 10px 0;
-    padding: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  color: #000000;
 }
 
 /* Tickets Section */
 .tickets h2 {
-    color: #b60000;
-    margin-bottom: 10px;
+  color: #b60000;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .tickets ul {
-    list-style-type: disc;
-    padding-left: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .tickets li {
-    font-size: 16px;
-    margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 /* Speakers Section */
-.speakers h2 {
-    color: #b60000;
-    margin-bottom: 10px;
-    border-top: 3px solid #b60000;
-    border-bottom: 3px solid #b60000;
-
+.speakers h1 {
+  color: #000000;
+  margin-bottom: 10px;
+  border-top: 3px solid #b60000;
+  border-bottom: 3px solid #b60000;
+  font-size: 225%;
+  font-weight: bold;
 }
 
-.speaker {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.speakers {
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.speaker img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-    border: 2px solid #ddd;
+.speakers h3 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.speaker h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
+.speakers a {
+  text-decoration: none;
+  color: #475aa7;
+  font-size: 20px;
+  text-decoration: underline;
 }
 
-.speaker a {
-    text-decoration: none;
-    color: #475aa7;
+.speakers a:hover,
+a:focus {
+  font-style: italic;
 }
 
-.speaker a:hover {
-    text-decoration: underline;
+.speakers img {
+  display: flex;
+  width: 90px;
+  height: 100px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 14px;
-    background-color: #911326;
-    border-top: 3px solid #b60000;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #911326;
+  border-top: 3px solid #b60000;
 }
 
 footer p {
-    color: #fff
+  color: #fff;
+  font-size: 16px;
 }
