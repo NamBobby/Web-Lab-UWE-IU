@@ -10,27 +10,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-<div class="container mt-3">
-  <h3>Input Groups</h3>
-  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front (.input-group-prepend) or behind (.input-group-append) the input field as a "help text".</p>
-  <p>Use the .input-group-text class to style the specified help text.</p>
   
-  <form action="/action_page.php">
+<div class="container mt-3">
+  <h1>Input Group Size</h1>
+  <p>Use the .input-group-sm class for small input groups and .input-group-lg for large inputs groups:</p>
+  <form>
+    <div class="input-group mb-3 input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Small</span>
+      </div>
+      <input type="text" class="form-control">
+    </div>
+  </form>
+  <form>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text">@</span>
+        <span class="input-group-text">Default</span>
       </div>
-      <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
+      <input type="text" class="form-control">
     </div>
-
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
-      <div class="input-group-append">
-        <span class="input-group-text">@example.com</span>
+  </form>
+  <form>
+    <div class="input-group mb-3 input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Large</span>
       </div>
+      <input type="text" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 
