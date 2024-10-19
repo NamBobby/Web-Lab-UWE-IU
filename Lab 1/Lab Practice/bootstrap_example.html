@@ -12,17 +12,15 @@
 <body>
 
 <div class="container mt-3">
-  <h2>Inline Custom Form Controls</h2>
-  <p>If you want the custom form controls to sit side by side (inline), add the .custom-control-inline to the wrapper/container:</p>
+  <h2>Custom Select Menu</h2>
+  <p>To create a custom select menu, add the .custom-select class to the select element:</p>
   <form action="/action_page.php">
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
-      <label class="custom-control-label" for="customRadio1">Custom radio</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="customRadio2" name="example2">
-      <label class="custom-control-label" for="customRadio2">Custom radio</label>
-    </div>
+    <select name="cars" class="custom-select mb-3">
+      <option selected>Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
