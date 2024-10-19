@@ -12,14 +12,14 @@
 <body> 
 
 <div class="container mt-3">
-  <h2>Fill / Equal Widths</h2>
-  <p>Use .flex-fill on flex items to force them into equal widths:</p>
+  <h2>Grow</h2>
+  <p>Use .flex-grow-1 on a flex item to take up the rest of the space:</p>
   <div class="d-flex mb-3">
-    <div class="p-2 flex-fill bg-info">Flex item 1</div>
-    <div class="p-2 flex-fill bg-warning">Flex item 2</div>
-    <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 flex-grow-1 bg-primary">Flex item 3</div>
   </div>
-  <p>Example without .flex-fill:</p>
+  <p>Example without .flex-grow-1:</p>
   <div class="d-flex mb-3 bg-secondary">
     <div class="p-2 bg-info">Flex item 1</div>
     <div class="p-2 bg-warning">Flex item 2</div>
