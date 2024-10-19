@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+        .container {
+          margin-top: 50px;
+        }
+        h1 {
+          margin-bottom: 20px;
+          color: #228a85;
+        }
+        h3 {
+          margin-bottom: 20px;
+          color: #228a85;
+        }
+        .form-group {
+          margin-bottom: 20px;
+        }
+        label {
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="radio"],
+        input[type="checkbox"] {
+          margin-right: 10px;
+        }
+        
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <p>
+        If you have a moment, we'd appreciate it if you would fill out this
+        survey
+      </p>
+      <h3>Your information</h3>
+      <form>
+        <div class="form-group">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="dateOfBirth">Date of Birth:</label>
+          <input type="text" id="dateOfBirth" name="dateOfBirth" />
+        </div>
+        <h3>How did you hear about us?</h3>
+        <div class="form-group">
+          <input
+            type="radio"
+            id="searchEngine"
+            name="hearAboutUs"
+            value="searchEngine"
+          />
+          <label for="searchEngine">Search engine</label>
+          <input
+            type="radio"
+            id="wordOfMouth"
+            name="hearAboutUs"
+            value="wordOfMouth"
+          />
+          <label for="wordOfMouth">Word of mouth</label>
+          <input
+            type="radio"
+            id="socialMedia"
+            name="hearAboutUs"
+            value="socialMedia"
+          />
+          <label for="socialMedia">Social Media</label>
+          <input type="radio" id="other" name="hearAboutUs" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="form-group">
+          <label for="receiveAnnouncements"
+            ><h3>
+              Would you like to receive announcements about new CDs and special
+              offers?
+            </h3></label
+          >
+          <div>
+          <input
+            type="checkbox"
+            id="yesIdLikeThat"
+            name="receiveAnnouncements"
+            value="yesIdLikeThat"
+          />
+          <label for="yesIdLikeThat">YES, I'd like that.</label>
+          </div>
+          <div>
+          <input
+            type="checkbox"
+            id="yesPleaseSendEmail"
+            name="receiveAnnouncements"
+            value="yesPleaseSendEmail"
+          />
+          <label for="yesPleaseSendEmail"
+            >YES, please send me email announcements.</label
+          >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contactMethod">Please contact me by:</label>
+          <select id="contactMethod" name="contactMethod">
+            <option value="">Select an option</option>
+            <option value="emailOrPostalMail">Email or postal mail</option>
+            <option value="emailOnly">Email only</option>
+            <option value="postalMailOnly">Postal mail only</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
