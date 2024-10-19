@@ -12,19 +12,15 @@
 <body>
 
 <div class="container">
-  <h2>Nesting Button Groups</h2>
-  <p>Nest button groups to create dropdown menus:</p>
+  <h2>Split Buttons</h2>
   <div class="btn-group">
-    <button type="button" class="btn btn-primary">Apple</button>
-    <button type="button" class="btn btn-primary">Samsung</button>
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      Sony
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Tablet</a>
-        <a class="dropdown-item" href="#">Smartphone</a>
-      </div>
+    <button type="button" class="btn btn-primary">Sony</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Tablet</a>
+      <a class="dropdown-item" href="#">Smartphone</a>
     </div>
   </div>
 </div>
