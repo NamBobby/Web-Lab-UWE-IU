@@ -12,27 +12,14 @@
 <body>
 
 <div class="container mt-3">
-  <h2>Custom Select Menu Sizing</h2>
-  <p>Use the .custom-select-sm class to create a small select menu and the .custom-select-lg class for a large one:</p>
-  <form>
-    <select class="custom-select custom-select-sm mb-3">
-      <option selected>Small Custom Select Menu</option>
-      <option value="volvo">Volvo</option>
-      <option value="fiat">Fiat</option>
-      <option value="audi">Audi</option>
-    </select>
-    <select name="cars" class="custom-select mb-3">
-      <option selected>Default Custom Select Menu</option>
-      <option value="volvo">Volvo</option>
-      <option value="fiat">Fiat</option>
-      <option value="audi">Audi</option>
-    </select>
-    <select name="cars" class="custom-select custom-select-lg mb-3">
-      <option selected>Large Custom Select Menu</option>
-      <option value="volvo">Volvo</option>
-      <option value="fiat">Fiat</option>
-      <option value="audi">Audi</option>
-    </select>
+  <h2>Custom Range</h2>
+  <p>To create a custom range menu, add the .custom-range class to the input element with type="range":</p>
+  <form action="/action_page.php">
+    <label for="customRange">Custom range</label>
+    <input type="range" class="custom-range" id="customRange" name="points1">
+    <label for="defaultRange">Default range</label>
+    <input type="range" id="defaultRange" name="points2">
+    <p><button type="submit" class="btn btn-primary">Submit</button></p>
   </form>
 </div>
 
