@@ -44,7 +44,7 @@ header h3 {
 
 .shadowtext {
   background-color: transparent;
-  text-shadow: 1.5px 1.5px 1.5px #97373c;
+  text-shadow: 2px 2px 2px #7d0008;
 }
 
 header img {
@@ -56,18 +56,18 @@ header img {
 
 /* Navigation Bar */
 .navbar {
-  background-color: #800000;
+  background-color: #7d0008;
   text-align: center;
 }
 
 .navbar ul {
-  padding: 0;
+  padding: 15px;
   list-style-type: none;
 }
 
 .navbar ul li {
   display: inline;
-  margin: 0 20px;
+  margin: 0 60px;
 }
 
 .navbar ul li a {
@@ -76,10 +76,15 @@ header img {
   font-weight: bold;
 }
 
+.navbar ul li a:hover {
+  color: rgb(255, 225, 55);
+  font-weight: bold;
+}
+
 /* Main*/
 
 main {
-  clear: left;
+  display: flex;
   padding: 20px;
 }
 
@@ -87,47 +92,41 @@ main p {
   color: #000000;
 }
 
-/* Mission Section */
-.mission h2 {
-  color: #b60000;
+.left,
+.right {
+  padding: 20px;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+.left h2,
+.right h2 {
+  color: #7d0008;
   padding: 0.5em 0 0.25em 0;
-  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.mission blockquote {
-  margin: 10px 0;
-  padding: 10px;
+.right p {
   color: #000000;
 }
 
-/* Tickets Section */
-.tickets h2 {
-  color: #b60000;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.tickets ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.tickets li {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-/* Speakers Section */
-.speakers h1 {
+.right blockquote {
+  padding: 2px 0 0 30px;
   color: #000000;
-  margin-bottom: 10px;
-  border-top: 3px solid #b60000;
-  border-bottom: 3px solid #b60000;
-  font-size: 225%;
-  font-weight: bold;
 }
 
+.right h1 {
+  padding: 10px 0 0 0px;
+  color: #000000;
+}
+
+/* Speakers class */
 .speakers {
   display: block;
   align-items: center;
@@ -143,20 +142,83 @@ main p {
 
 .speakers a {
   text-decoration: none;
-  color: #475aa7;
+  color: #0c10e8;
   font-size: 20px;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .speakers a:hover,
 a:focus {
-  font-style: italic;
+  color: #543ea2;
+  font-weight: bold;
 }
 
 .speakers img {
   display: flex;
-  width: 90px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+}
+
+/* softhemonth class */
+
+.softhemonth .flexstruc {
+  display: flex;
+}
+
+.softhemonth .flexstruc .flexstruca {
+  width: 58%;
+}
+
+.softhemonth .flexstruc .flexstrucb {
+  width: 42%;
+}
+
+.softhemonth h2 {
+  color: #7d0008;
+  font-weight: bold;
+  border-top: 3px solid #7d0008;
+}
+
+.softhemonth a {
+  text-decoration: none;
+  color: #0c10e8;
+  text-decoration: underline;
+}
+
+.softhemonth img {
+  width: 260px;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+.softhemonth p {
+  margin-right: 2px;
+}
+
+.softhemonth a:hover,
+a:focus {
+  color: #543ea2;
+}
+
+/* Tickets class */
+.tickets h2 {
+  color: #7d0008;
+  font-weight: bold;
+  margin-top: 20px;
+  border-top: 3px solid #7d0008;
+}
+
+.tickets ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.tickets li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #000000;
 }
 
 /* Footer */
@@ -165,7 +227,7 @@ footer {
   margin-top: 30px;
   padding: 10px;
   background-color: #911326;
-  border-top: 3px solid #b60000;
+  border-top: 3px solid #911326;
 }
 
 footer p {

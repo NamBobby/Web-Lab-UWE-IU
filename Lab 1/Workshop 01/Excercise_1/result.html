@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Survey Submitted</h1>
+      <p>Here is the information you submitted:</p>
+      
+      <ul class="list-group">
+        <li class="list-group-item"><strong>First Name:</strong> <span id="displayFirstname"></span></li>
+        <li class="list-group-item"><strong>Last Name:</strong> <span id="displayLastname"></span></li>
+        <li class="list-group-item"><strong>Email:</strong> <span id="displayEmail"></span></li>
+        <li class="list-group-item"><strong>Date of Birth:</strong> <span id="displayDateOfBirth"></span></li>
+        <li class="list-group-item"><strong>How You Heard About Us:</strong> <span id="displayHearAboutUs"></span></li>
+        <li class="list-group-item"><strong>Announcements:</strong> <span id="displayAnnouncements"></span></li>
+        <li class="list-group-item"><strong>Contact Method:</strong> <span id="displayContactMethod"></span></li>
+      </ul>
+
+      <a href="survey.html" class="btn btn-primary mt-3">Back to Survey</a>
+    </div>
+
+    <!-- JavaScript to display submitted data -->
+    <script>
+      // Function to get URL query parameters
+      function getQueryParams() {
+        const query = window.location.search.substring(1);
+        const params = {};
+        query.split('&').forEach(function(part) {
+          const [key, value] = part.split('=');
+          params[decodeURIComponent(key)] = decodeURIComponent(value);
+        });
+        return params;
+      }
+
+      // Display the form data on the result page
+      const params = getQueryParams();
+      document.getElementById('displayFirstname').textContent = params.firstname;
+      document.getElementById('displayLastname').textContent = params.lastname;
+      document.getElementById('displayEmail').textContent = params.email;
+      document.getElementById('displayDateOfBirth').textContent = params.dateOfBirth;
+      document.getElementById('displayHearAboutUs').textContent = params.hearAboutUs;
+      document.getElementById('displayAnnouncements').textContent = params.announcements || 'None';
+      document.getElementById('displayContactMethod').textContent = params.contactMethod;
+    </script>
+  </body>
+</html>
