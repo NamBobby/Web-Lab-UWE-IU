@@ -19,12 +19,10 @@
         <li class="list-group-item"><strong>Contact Method:</strong> <span id="displayContactMethod"></span></li>
       </ul>
 
-      <a href="survey.html" class="btn btn-primary mt-3">Back to Survey</a>
+      <a href="Excercise_1.html" class="btn btn-primary mt-3">Back to Survey</a>
     </div>
 
-    <!-- JavaScript to display submitted data -->
     <script>
-      // Function to get URL query parameters
       function getQueryParams() {
         const query = window.location.search.substring(1);
         const params = {};
@@ -35,7 +33,6 @@
         return params;
       }
 
-      // Display the form data on the result page
       const params = getQueryParams();
       document.getElementById('displayFirstname').textContent = params.firstname;
       document.getElementById('displayLastname').textContent = params.lastname;

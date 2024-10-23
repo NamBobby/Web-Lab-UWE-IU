@@ -84,3 +84,12 @@ input[type="checkbox"]:checked::before {
   left: 1.7px;
 }
 
+button[type="submit"] {
+  width: 75px;
+  height: 35px;
+  background-color: #E8E8E8; 
+  color: #000000; 
+  border-color: #000000;
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}

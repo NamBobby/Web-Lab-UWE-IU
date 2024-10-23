@@ -94,20 +94,17 @@
       </form>
     </div>
 
-     <!-- JavaScript to handle form redirection -->
      <script>
       document.getElementById('surveyForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
 
-        // Gather the form data
         const firstname = document.getElementById('firstname').value;
         const lastname = document.getElementById('lastname').value;
         const email = document.getElementById('email').value;
         const dateOfBirth = document.getElementById('dateOfBirth').value;
         const hearAboutUs = document.querySelector('input[name="hearAboutUs"]:checked').value;
-
-        // Get checkbox values
         const announcements = [];
+
         if (document.getElementById('yesIdLikeThat').checked) {
           announcements.push(document.getElementById('yesIdLikeThat').value);
         }
@@ -116,11 +113,8 @@
         }
 
         const contactMethod = document.getElementById('contactMethod').value;
-
-        // Create the URL with query parameters
         const queryString = `result.html?firstname=${encodeURIComponent(firstname)}&lastname=${encodeURIComponent(lastname)}&email=${encodeURIComponent(email)}&dateOfBirth=${encodeURIComponent(dateOfBirth)}&hearAboutUs=${encodeURIComponent(hearAboutUs)}&announcements=${encodeURIComponent(announcements.join(', '))}&contactMethod=${encodeURIComponent(contactMethod)}`;
 
-        // Redirect to the result page with the query parameters
         window.location.href = queryString;
       });
     </script>
