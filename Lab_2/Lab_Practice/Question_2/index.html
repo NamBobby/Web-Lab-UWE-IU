@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register for an Account</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Register for an Account</h1>
+    <div id="error-message" class="error" style="display: none"></div>
+    <div id="success-message" class="success" style="display: none"></div>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="email">E-Mail:</label>
+        <input type="text" id="email" name="email" />
+        <span>*</span>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Phone:</label>
+        <input type="text" id="mobile" name="mobile" />
+        <span>*</span>
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">Select a country</option>
+          <option value="Vietnam">Vietnam</option>
+          <option value="Japan">Japan</option>
+          <option value="UK">UK</option>
+        </select>
+        <span>*</span>
+      </div>
+      <div class="form-group">
+        <label>Contact me by:</label>
+        <div class="checkbox-group">
+          <label><input type="radio" name="contact" value="text" /> Text</label>
+          <label
+            ><input type="radio" name="contact" value="email" /> Email</label
+          >
+          <label
+            ><input type="radio" name="contact" value="none" /> Don't contact
+            me</label
+          >
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="terms"> Terms of Service:</label>
+        <input type="checkbox" id="terms" name="terms" /> I accept
+        <span>*</span>
+      </div>
+
+      <div class="buttons">
+        <button type="button" onclick="validateForm()">Register</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+      </div>
+    </form>
+    <script src="register.js"></script>
+  </body>
+</html>
