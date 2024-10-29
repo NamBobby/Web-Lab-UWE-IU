@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <main>
+        <h1>Register for an Account</h1>
+        <!-- <ul class="message">
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        </ul> -->
+        <form action="confirm.html" method="post">
+            <div>
+                <label for="email_address">E-Mail:</label>
+                <input type="text" name="email_address" id="email_address">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="phone">Mobile Phone:</label>
+                <input type="text" name="phone" id="phone">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">Select a country</option>
+                    <option value="">USA</option>
+                    <option value="">Mexico</option>
+                </select>
+                <span>*</span>
+            </div>
+            <div>
+                <label>Contract me by:</label>
+                <input type="radio" name="contract" id="text" 
+                    value="text">Text
+                <input type="radio" name="contract" id="email" 
+                    value="email">Email
+                <input type="radio" name="contract" id="none" 
+                    value="none">Don't contact me
+            </div>
+            <div>
+                <label for="#">Terms of Service:</label>
+                <input type="checkbox" name="term" id="term"
+                    value="yes">I accept
+                <span>*</span>
+            </div>
+            <div>
+                <label for="#">&nbsp;</label>
+                <input type="button" value="Register" id="register">
+                <input type="button" value="Reset" id="reset_form">
+            </div>
+        </form>
+        <script src="register.js"></script>
+    </main>
+</body>
+</html>
