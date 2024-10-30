@@ -1,3 +1,5 @@
+//Le Thanh Phuong Nam_ITITWE19025
+
 const textarea = document.getElementById("message");
 const container = document.getElementById("container");
 const charCount = document.getElementById("charCount");

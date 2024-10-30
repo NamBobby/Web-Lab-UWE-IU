@@ -1,3 +1,5 @@
+//Le Thanh Phuong Nam_ITITWE19025
+
 const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
 const enterIcon = document.querySelector('.enter-icon-container');
@@ -9,7 +11,7 @@ function addTask(taskText) {
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.style.display = 'none'; // Hide the default checkbox
+    checkbox.style.display = 'none'; 
     checkbox.addEventListener('change', () => toggleTaskComplete(taskItem));
 
     const customCheckbox = document.createElement('span');
@@ -40,9 +42,9 @@ function toggleTaskComplete(taskItem) {
     taskItem.classList.toggle('completed');
     
     if (taskItem.classList.contains('completed')) {
-        taskList.appendChild(taskItem); // Move completed tasks to the end
+        taskList.appendChild(taskItem); 
     } else {
-        taskList.insertBefore(taskItem, taskList.firstChild); // Move pending tasks to the beginning
+        taskList.insertBefore(taskItem, taskList.firstChild); 
     }
 }
 
@@ -51,18 +53,16 @@ function deleteTask(taskItem) {
     taskList.removeChild(taskItem);
 }
 
-// Event listener for adding a task on Enter key press
 taskInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter' && taskInput.value.trim() !== '') {
         addTask(taskInput.value.trim());
-        taskInput.value = ''; // Clear the input
+        taskInput.value = ''; 
     }
 });
 
-// Event listener for adding a task by clicking the Enter icon
 enterIcon.addEventListener('click', () => {
     if (taskInput.value.trim() !== '') {
         addTask(taskInput.value.trim());
-        taskInput.value = ''; // Clear the input
+        taskInput.value = ''; 
     }
 });
